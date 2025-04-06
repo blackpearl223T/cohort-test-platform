@@ -1,4 +1,5 @@
 from django.http import HttpResponseRedirect
+from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
@@ -7,8 +8,9 @@ from .form import RegisterForm
 
 
 
-def home():
-    pass
+def home(request):
+    return HttpResponse("Welcome to the homepage!")
+    
 
 def login(request):
     if request.method == "POST":
