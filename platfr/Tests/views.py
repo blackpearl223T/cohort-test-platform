@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 
-def test():
+def home():
     pass
 
 # Create your views here.

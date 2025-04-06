@@ -8,7 +8,6 @@ from .form import RegisterForm
 
 
 def home():
-
     pass
 
 def login(request):
@@ -26,7 +25,7 @@ def login(request):
                 return redirect('home')
             else:
                 print("Authentication failed")
-                form.add_error(None, "Invalid username or password or cohort")
+                form.add_error(None, "Invalid username or password or Cohort")
 
     else:
         form = AuthenticationForm()
@@ -49,5 +48,12 @@ def register(request):
     else:
         form = RegisterForm()
     return render(request, "register/register.html", {"form": form})
+
+
+
+
+
+
+
 
 # Create your views here.
