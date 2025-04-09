@@ -1,5 +1,16 @@
+asgiref==3.8.1
 Django==5.1.4
+django-crispy-forms==2.0
 djangorestframework==3.15.2
+drf-yasg==1.21.10
 environs==11.2.1
 gunicorn==23.0.0
-django-crispy-forms==2.0
+inflection==0.5.1
+marshmallow==3.26.1
+packaging==24.2
+python-dotenv==1.1.0
+pytz==2025.2
+PyYAML==6.0.2
+sqlparse==0.5.3
+tzdata==2025.2
+uritemplate==4.1.1

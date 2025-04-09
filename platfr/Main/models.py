@@ -4,7 +4,7 @@ from Cohort.models import Cohort
 
 class CustomUser(AbstractUser):
     Cohort= models.ForeignKey(Cohort, on_delete=models.SET_NULL, null=True, blank=True)
-    is_teacher = models.BooleanField()
+    is_teacher = models.BooleanField(default=False, null=False)
 
     def __str__(self):
         return self.username 
